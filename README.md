@@ -101,6 +101,8 @@ Observations:
 Command:
 arp -a  
 
+<img width="1132" height="905" alt="FinalImageARPA_9" src="https://github.com/user-attachments/assets/206102b1-0cdc-425b-9026-7fbb45e00727" />
+
 Observations:
 - Gateway MAC changed after attack  
 - ARP cache reflects spoofed mapping  

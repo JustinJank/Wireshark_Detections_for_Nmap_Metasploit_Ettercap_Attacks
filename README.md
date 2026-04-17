@@ -35,7 +35,7 @@ Commands:
 nmap -sn 192.168.56.0/24  
 nmap -sS -sV -p 1-1000 <target-ip>  
 
-Evidence:
+
 ![Nmap Discovery](https://github.com/user-attachments/assets/2af90d6a-73ae-437a-b48b-2c6319c4cdd4)  
 ![Nmap SYN Scan](https://github.com/user-attachments/assets/a59c82ef-521c-4f69-bdb0-a90cb0f9eda4)  
 ![Wireshark SYN Capture](https://github.com/user-attachments/assets/47a5d421-e825-4fe2-a2e5-6038c2e05e21)
@@ -54,10 +54,10 @@ set RHOSTS <target-ip>
 set PORTS 1-1000  
 run  
 
-Evidence:
+
 ![Metasploit Config](https://github.com/user-attachments/assets/9535af41-bdf8-49a6-8825-f5c35840dbd2)  
 ![Metasploit Scan](https://github.com/user-attachments/assets/4ffe1a54-fe2b-43d0-b330-47725b598ea5)  
-![Wireshark Detection]<img width="1898" height="1046" alt="Wireshark_Filters_Detecting_Metasploit_Scan_6" src="https://github.com/user-attachments/assets/147a9729-0d56-4170-82b1-89a098e1ee01" />
+<img width="1898" height="1046" alt="Wireshark_Filters_Detecting_Metasploit_Scan_6" src="https://github.com/user-attachments/assets/147a9729-0d56-4170-82b1-89a098e1ee01" />
 
 
 Observations:
@@ -73,7 +73,7 @@ Steps:
 - Selected target and gateway  
 - Started ARP poisoning using Ettercap  
 
-Evidence:
+
 ![Ettercap MITM](https://github.com/user-attachments/assets/82c40e35-ed6b-42c4-9027-504c863de237)
 
 Observations:
@@ -88,7 +88,7 @@ arp
 arp.opcode == 2  
 tcp.flags.syn == 1 && tcp.flags.ack == 0  
 
-Evidence:
+
 ![Wireshark MITM](https://github.com/user-attachments/assets/73d5ae0b-35c6-4c1b-bf02-4266eaec25c4)
 
 Observations:

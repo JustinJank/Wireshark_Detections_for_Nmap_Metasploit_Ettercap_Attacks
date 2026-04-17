@@ -57,7 +57,8 @@ run
 Evidence:
 ![Metasploit Config](https://github.com/user-attachments/assets/9535af41-bdf8-49a6-8825-f5c35840dbd2)  
 ![Metasploit Scan](https://github.com/user-attachments/assets/4ffe1a54-fe2b-43d0-b330-47725b598ea5)  
-![Wireshark Detection](https://github.com/user-attachments/assets/8cf47f97-78d8-4f00-a90c-5716acf82f3f)
+![Wireshark Detection]<img width="1898" height="1046" alt="Wireshark_Filters_Detecting_Metasploit_Scan_6" src="https://github.com/user-attachments/assets/147a9729-0d56-4170-82b1-89a098e1ee01" />
+
 
 Observations:
 - High-speed SYN scan behavior observed  

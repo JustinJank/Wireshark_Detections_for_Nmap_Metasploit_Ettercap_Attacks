@@ -53,8 +53,9 @@ TCP SYN patterns visible in Wireshark
 <img width="1876" height="1000" alt="Wireshark_NMAP_Detections_via_filters_2" src="https://github.com/user-attachments/assets/a59c82ef-521c-4f69-bdb0-a90cb0f9eda4" />
 <img width="1907" height="1051" alt="Wireshark_Capturing_SYN_Port_Scans_3" src="https://github.com/user-attachments/assets/47a5d421-e825-4fe2-a2e5-6038c2e05e21" />
 
+---
 
-Phase 2 — Metasploit Port Scanning
+### Phase 2 — Metasploit Port Scanning
 
 Metasploit was utilized to simulate structured TCP scanning behavior.
 
@@ -68,16 +69,18 @@ run
 <img width="1897" height="1035" alt="Filters_Displaying_Targetted_Ports_and_IPs_4" src="https://github.com/user-attachments/assets/4ffe1a54-fe2b-43d0-b330-47725b598ea5" />
 <img width="1009" height="920" alt="Metasploit_Basic_Attacking_Configurations_5" src="https://github.com/user-attachments/assets/9535af41-bdf8-49a6-8825-f5c35840dbd2" />
 
-Observations
+# Observations
 High speed structured SYN scan behavior observed
 Distinctive scanning pattern(s) compared to traditional Nmap scans
 Increased TCP SYN packet volume evidently visible in Wireshark
 
 <img width="1898" height="1046" alt="Wireshark_Filters_Detecting_Metasploit_Scan_6" src="https://github.com/user-attachments/assets/8cf47f96-78d8-4f00-a90c-5716acf82f3f" />
 
- Phase 3 — ARP Spoofing (MITM Attack)
+---
 
-ARP poisoning was performed using Ettercap to position the attacker as a Man-in-the-Middle to simulate a real world attack.
+### Phase 3 — ARP Spoofing (MITM Attack)
+
+## ARP poisoning was performed using Ettercap to position the attacker as a Man-in-the-Middle to simulate a real world attack.
 
 Ettercap Steps Performed:
 Enabled IP forwarding on attacker VM
@@ -88,12 +91,12 @@ Initiated ARP poisoning attack
 <img width="1900" height="1050" alt="Wireshark_Detecting_Ettercap_MITM_Attack_7" src="https://github.com/user-attachments/assets/82c40e35-ed6b-42c4-9027-504c863de237" />
 
 
-Observations
+# Observations
 Gateway MAC address was spoofed
 ARP reply frequency increased significantly
 Victim traffic routed through attacker system
 
- Phase 4 — Packet Capture & Analysis (Wireshark)
+### Phase 4 — Packet Capture & Analysis (Wireshark)
 
 Network traffic was captured and analyzed using Wireshark
 Filters Used:
@@ -103,7 +106,7 @@ tcp.flags.syn == 1 && tcp.flags.ack == 0
 
 <img width="1900" height="1054" alt="MITM_ARP_MAC_Spoofing_Wireshark_Capture_8" src="https://github.com/user-attachments/assets/73d5ae0b-35c6-4c1b-bf02-4266eaec25c4" />
 
- Observations
+# Observations
 ARP responses increased during MITM phase
 SYN scan patterns clearly visible
 IP-to-MAC inconsistencies detected during spoofing
